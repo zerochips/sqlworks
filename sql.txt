@@ -1,0 +1,15 @@
+SQL 언어
+- DDL : Data Definition Language(데이터 정의어)
+	(Create, Alter, Drop)
+- DML : Data Mainpulation Language(데이터 조작)
+	(Insert, Select, Deleta -> Commit, Rollback)
+- DCL : Data Control Language(데이터 제어어)
+	(Grant, Revoke)
+
+부서 테이블
+Create table 
+CRACTE TABLE dept( 
+    -- 칼럼이름 자료형
+    -- 부서코드 문자형
+   deptno VARCHAR2(10)
+);

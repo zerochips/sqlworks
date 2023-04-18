@@ -12,5 +12,4 @@ CREATE TABLE tbl_class(
 INSERT INTO tbl_class VALUES (101, '소프트웨어학과', '02-1234-1234', 'B동 3층');
 INSERT INTO tbl_class VALUES (102, '화학공학과', '02-1234-4567', 'B동 4층');
 INSERT INTO tbl_class VALUES (103, '전기전자공학과', '02-1234-5678', 'B동 5층');
-
 SELECT * FROM tbl_class;

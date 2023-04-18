@@ -15,6 +15,11 @@ CREATE TABLE tbl_student(
 INSERT INTO tbl_student VALUES (20211234, '이강', 22, '여자', '서울시 종로구', 102);
 INSERT INTO tbl_student VALUES (20211235, '박대양', 25, '남자', '경기도 성남시', 101);
 INSERT INTO tbl_student VALUES (20211236, '한비야', 23, '여자', '경기도 수원시', 103);
+INSERT INTO tbl_student VALUES (20211237, '김하늘', 27, '여자', '서울시 양천구', 101);
+INSERT INTO tbl_student VALUES (20211238, '우주선', 31, '남자', '경기도 김포시', 101);
+INSERT INTO tbl_student VALUES (20211239, '한강', 22, '여자', '경기도 용인시', 102);
+
+SELECT * FROM tbl_student;
 
 -- 1. 주소가 '경기도'인 학생을 검색하시오
 SELECT * FROM tbl_student 
@@ -31,6 +36,7 @@ SELECT * FROM tbl_student ORDER BY age DESC;
 -- 4. '박대양'의 나이를 30세로 변경(수정)하시오.
 UPDATE tbl_student SET age = 30 WHERE sname = '박대양';
 
+COMMIT;
 
 
 

@@ -7,6 +7,11 @@ SELECT ROUND(3.875) FROM DUAL;
 SELECT ROUND(3.875, 1) FROM DUAL;
 SELECT ROUND(3.875, 2) FROM DUAL;
 
+-- 버림 : TRUNC(수, 자리수)
+SELECT TRUNC(3.875, 1) FROM DUAL;
+
+SELECT * FROM employee;
+
 SELECT sal
 FROM employee;
 
@@ -26,7 +31,7 @@ SELECT sal 급여,
        TRUNC(sal/30, -1) 결과3
 FROM employee;
 
--- 고객별 평균 주문 금액을 백원 단위로 반올림한 값을 구하시오
+-- 고객별 평균 주문 금액을 십원 단위로 반올림한 값을 구하시오
 SELECT custid 고객번호, ROUND(AVG(saleprice), -2) 평균주문금액 FROM orders GROUP BY custid;
 
 SELECT custid 고객번호, COUNT(*) 주문수, SUM(saleprice) 총액

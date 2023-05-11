@@ -15,3 +15,5 @@ VALUES ('colud456','m123456#','오대리','여');
 DELETE FROM member;
 
 SELECT * FROM member;
+
+DELETE FROM board WHERE bno = 3;

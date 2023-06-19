@@ -48,15 +48,16 @@ delete from t_member where name = '가미';
 SELECT DECODE(COUNT(*), 1, 'true', 'false') AS result
 FROM t_member WHERE memberid = 'cloud';
 
-
-
+-- id 중복 체크
+SELECT COUNT(*) AS result
+FROM t_member WHERE memberid = 'cloud';
 
 
 -- drop table t_member;
---drop table t_board; -- board table 삭제
---drop sequence b_seq;   -- boar b_seq 삭제
+drop table t_board; -- board table 삭제
+drop sequence b_seq;   -- boar b_seq 삭제
 
 -- 새로 고침 시 자동생성 오류 발생
--- t_board와 sequence b_seq    -- drop 삭제 후 다시 재 생성
+--t_board와 sequence b_seq    -- drop 삭제 후 다시 재 생성
 
 
